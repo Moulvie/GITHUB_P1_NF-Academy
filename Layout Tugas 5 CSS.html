@@ -1,0 +1,129 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Layout CSS</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="header">
+      <h1>MY PORTOFOLIO</h1>
+    </header>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="#" onclick="showContent('home')">Home</a></li>
+        <li><a href="#" onclick="showContent('about')">About Me</a></li>
+        <li><a href="#" onclick="showContent('My Studi')">My Studi</a></li>
+        <li><a href="#" onclick="showContent('contact')">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="main-content">
+      <aside class="sidebar">
+        <h2>Sidebar</h2>
+        <ul>
+          <li><a href="https://www.instagram.com/najibbeaja?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==/teman1" target="_blank">IG-NAJIB</a></li>
+          <li><a href="https://www.instagram.com/taufikk_hidyt?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==/teman2" target="_blank">IG-TAUFIK</a></li>
+          <li><a href="https://www.instagram.com/_aryy26/?utm_source=ig_web_button_share_sheet/teman3" target="_blank">IG-ARI</a></li>
+          <li><a href="https://www.instagram.com/faisalfaturh089?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==/teman4" target="_blank">IG-FAISAL</a></li>
+          <li><a href="https://www.instagram.com/fadel_03_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==/teman5" target="_blank">IG-FADEL</a></li>
+        </ul>
+      </aside>
+
+      <article class="content">
+        <div id="home" class="content-section">
+          <h2>Home</h2>
+          <p>Selamat datang di portofolio saya! Saya adalah seorang pengembang web yang memiliki minat dalam membangun website yang interaktif dan responsif.</p>
+          <p>Saya memiliki pengalaman dalam HTML, CSS, JavaScript, dan beberapa framework modern seperti React dan Vue.</p>
+        </div>
+
+        <div id="about" class="content-section" style="display: none;">
+          <h2>About</h2>
+          <p>Halo! Nama saya Rizky Maulana, seorang mahasiswa Teknik Informatika di Universitas Muhammadiyah Jakarta.</p>
+          <p>Saya memiliki ketertarikan dalam dunia pemrograman, khususnya dalam pengembangan web dan aplikasi mobile.</p>
+          <p>Selain coding, saya juga suka membaca buku teknologi dan mengikuti perkembangan dunia IT.</p>
+        </div>
+
+        <div id="My Studi" class="content-section" style="display: none;">
+          <h2>Riwayat Pendidikan</h2>
+    <table>
+        <thead>
+            <tr>  
+                <th>Tahun</th>
+                <th>Pendidikan</th>
+            </tr>
+        </thead>
+        <tbody>
+                <td><strong>2022 - 2026</strong></td>
+                <td>S1 Teknik Informatika, Universitas Muhammadiyah Jakarta</td>
+            </tr>
+            <tr>
+                <td><strong>2019 - 2022</strong></td>
+                <td>SMK Muhammadiyah 4 Jakarta</td>
+            </tr>
+            <tr>
+                <td><strong>2016 - 2019</strong></td>
+                <td>SMP Islam Plus Az-Zahra Jakarta</td>
+            </tr>
+        </tbody>
+    </table>
+        </div>
+
+        <div id="contact" class="content-section" style="display: none;">
+          <h2>Contact</h2>
+          <p>Jika Anda ingin bekerja sama atau memiliki pertanyaan, silakan hubungi saya melalui:</p>
+          <ul>
+              <li>Email: rmmoulvie264@gmail.com</li>
+              <li>Instagram: <a href="https://www.instagram.com/rizkyee_maul?igsh=MWVtdDV5c2RlNXY3aw==" target="_blank">@rizkyee_maul</a></li>
+              <li>LinkedIn: <a href="https://www.linkedin.com/in/rizkymaulana" target="_blank">Rizky Maulana</a></li>
+          </ul>
+        </div>
+        
+        <div id="section1" class="content-section" style="display: none;">
+          <h2>Link 1</h2>
+          <p>Ini adalah konten untuk link 1.</p>
+        </div>
+
+        <div id="section2" class="content-section" style="display: none;">
+          <h2>Link 2</h2>
+          <p>Ini adalah konten untuk link 2.</p>
+        </div>
+
+        <div id="section3" class="content-section" style="display: none;">
+          <h2>Link 3</h2>
+          <p>Ini adalah konten untuk link 3.</p>
+        </div>
+      </article>
+
+      <aside class="sidebar">
+        <h2>Sidebar</h2>
+        <ul>
+          <li><a href="https://www.learn-html.org" target="_blank">Belajar HTML</a></li>
+              <li><a href="https://www.learn-css.org" target="_blank">Belajar CSS</a></li>
+              <li><a href="https://www.javascript.info" target="_blank">Belajar JavaScript</a></li>
+              <li><a href="https://www.reactjs.org" target="_blank">Belajar React</a></li>
+              <li><a href="https://www.nodejs.org" target="_blank">Belajar Node.js</a></li>
+        </ul>
+      </aside>
+    </section>
+
+    <footer class="footer">
+        <p>Di buat oleh <strong>RIZKY MAULANA</strong> | <a href="https://umj.ac.id" target="_blank">Universitas Muhammadiyah Jakarta</a></p>
+    </footer>
+
+    <script>
+      function showContent(sectionId) {
+        // Menyembunyikan semua konten
+        var sections = document.getElementsByClassName('content-section');
+        for (var i = 0; i < sections.length; i++) {
+          sections[i].style.display = 'none';
+        }
+        
+        // Menampilkan konten yang dipilih
+        document.getElementById(sectionId).style.display = 'block';
+      }
+    </script>
+  </body>
+  </html>
