@@ -1,22 +1,56 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery Indah</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h2 {
+            color: #343a40;
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .gallery img {
+            border: 2px solid #343a40;
+            border-radius: 10px;
+            width: 150px;
+            height: auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1); /* Membesarkan gambar saat hover */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Gallery Foto</h1>
-    </header>
-    <main>
-        <div class="gallery-container">
-            <div class="gallery-item"><img src="Gambar/Gambar WhatsApp 2024-11-25 pukul 21.25.14_b41a5baa.jpg" alt="Gambar 1"></div>
-            <div class="gallery-item"><img src="Gambar/Gambar WhatsApp 2025-02-24 pukul 12.16.34_55d7d6a4.jpg" alt="Gambar 2"></div>
-            <div class="gallery-item"><img src="Gambar/Gambar WhatsApp 2025-02-24 pukul 12.16.36_601fed82.jpg" alt="Gambar 3"></div>
-            <div class="gallery-item"><img src="Gambar/Gambar WhatsApp 2025-03-03 pukul 10.18.54_6565ea92.jpg" alt="Gambar 4"></div>
-        </div>
-    </main>
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <img src="Gambar WhatsApp 2024-11-25 pukul 21.25.14_b41a5baa.jpg" alt="Gambar 1">
+        <img src="Gambar WhatsApp 2025-02-24 pukul 12.16.34_55d7d6a4.jpg" alt="Gambar 1">
+        <img src="Gambar WhatsApp 2025-02-24 pukul 12.16.36_601fed82.jpg" alt="Gambar 1">
+    </div>
 </body>
 </html>

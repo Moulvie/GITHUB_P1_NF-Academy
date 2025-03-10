@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Background konsisten biru muda */
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .menu {
+            background-color: #343a40; /* Warna background yang sama dengan footer */
+            padding: 30px;
+            text-align: center;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+        }
+
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu ul li {
+            margin: 0 30px; /* Jarak antar menu tetap sama */
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: #ffc107; /* Warna teks kuning menarik */
+            font-size: 24px; /* Ukuran teks konsisten dengan footer */
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .menu ul li a:hover {
+            color: #1e90ff; /* Biru muda saat hover */
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="profile.html" target="content">Home</a></li>
+            <li><a href="mystudi.html" target="content">My Studi</a></li>
+            <li><a href="gallery.html" target="content">Gallery</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
